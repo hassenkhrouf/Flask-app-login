@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "http://localhost:5000/$1"
+      "dest": "app.py"
     }
   ],
   "builds": [
