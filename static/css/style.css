@@ -1,0 +1,102 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-input {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  background-color: transparent;
+}
+
+.form-input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size
+16px;
+padding: 10px 0;
+pointer-events: none;
+transition: all 0.3s ease;
+}
+
+.form-input input:focus ~ label,
+.form-input input:valid ~ label {
+top: -20px;
+font-size: 12px;
+color: #999;
+}
+
+.form-input input:focus,
+.form-input input:valid {
+border-bottom: 2px solid #ff6600;
+}
+
+.form-input i {
+position: absolute;
+top: 9px;
+left: 0;
+color: #999;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+
+.form-input input:focus ~ i,
+.form-input input:valid ~ i {
+top: -20px;
+color: #ff6600;
+}
+
+.form-input.focus input {
+border-bottom: 2px solid #ff6600;
+}
+
+.form-input.focus i {
+color: #ff6600;
+top: -20px;
+}
+
+.form-input input[type="submit"] {
+background-color: #ff6600;
+color: #fff;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+padding: 10px 20px;
+border-radius: 5px;
+}
+
+.form-input input[type="submit"]:hover {
+background-color: #333;
+}
