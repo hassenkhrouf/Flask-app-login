@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "http://localhost:5000/$1"
+    }
+  ],
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ]
+}
+
